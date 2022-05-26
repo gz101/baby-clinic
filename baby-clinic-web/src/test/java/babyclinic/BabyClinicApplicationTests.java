@@ -1,4 +1,4 @@
-package me.gabrielchiong.babyclinic;
+package babyclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
