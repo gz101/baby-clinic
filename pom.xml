@@ -4,7 +4,7 @@
 
     <groupId>me.gabrielchiong</groupId>
     <artifactId>baby-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
 
     <modules>
         <module>baby-clinic-data</module>
@@ -97,7 +97,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:gz101/baby-clinic.git</developerConnection>
-        <tag>baby-clinic-0.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
