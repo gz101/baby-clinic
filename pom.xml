@@ -4,7 +4,7 @@
 
     <groupId>me.gabrielchiong</groupId>
     <artifactId>baby-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <modules>
         <module>baby-clinic-data</module>
