@@ -2,14 +2,6 @@ package me.gabrielchiong.babyclinic.services;
 
 import me.gabrielchiong.babyclinic.models.PrimaryParent;
 
-import java.util.Set;
-
-public interface PrimaryParentService {
+public interface PrimaryParentService extends CrudService<PrimaryParent, Long> {
     PrimaryParent findByLastName(String lastName);
-
-    PrimaryParent findById(Long id);
-
-    PrimaryParent save(PrimaryParent primaryParent);
-
-    Set<PrimaryParent> findAll();
 }
