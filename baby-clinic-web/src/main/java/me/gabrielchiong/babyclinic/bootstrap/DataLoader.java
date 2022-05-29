@@ -4,17 +4,15 @@ import me.gabrielchiong.babyclinic.models.Doctor;
 import me.gabrielchiong.babyclinic.models.PrimaryParent;
 import me.gabrielchiong.babyclinic.services.DoctorService;
 import me.gabrielchiong.babyclinic.services.PrimaryParentService;
-import me.gabrielchiong.babyclinic.services.map.DoctorServiceMap;
-import me.gabrielchiong.babyclinic.services.map.PrimaryParentServiceMap;
 import org.springframework.boot.CommandLineRunner;
 
 public class DataLoader implements CommandLineRunner {
     private final PrimaryParentService primaryParentService;
     private final DoctorService doctorService;
 
-    public DataLoader() {
-        primaryParentService = new PrimaryParentServiceMap();
-        doctorService = new DoctorServiceMap();
+    public DataLoader(PrimaryParentService primaryParentService, DoctorService doctorService) {
+        this.primaryParentService = primaryParentService;
+        this.doctorService = doctorService;
     }
 
     @Override

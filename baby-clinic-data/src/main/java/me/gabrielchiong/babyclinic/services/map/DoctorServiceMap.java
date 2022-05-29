@@ -2,9 +2,11 @@ package me.gabrielchiong.babyclinic.services.map;
 
 import me.gabrielchiong.babyclinic.models.Doctor;
 import me.gabrielchiong.babyclinic.services.DoctorService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class DoctorServiceMap extends AbstractMapService<Doctor, Long> implements DoctorService {
     @Override
     public Set<Doctor> findAll() {

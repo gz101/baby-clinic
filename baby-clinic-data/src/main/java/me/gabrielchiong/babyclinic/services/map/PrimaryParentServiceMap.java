@@ -2,9 +2,11 @@ package me.gabrielchiong.babyclinic.services.map;
 
 import me.gabrielchiong.babyclinic.models.PrimaryParent;
 import me.gabrielchiong.babyclinic.services.PrimaryParentService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PrimaryParentServiceMap extends AbstractMapService<PrimaryParent, Long> implements PrimaryParentService {
 
     @Override
