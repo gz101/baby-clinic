@@ -1,12 +1,11 @@
 package me.gabrielchiong.babyclinic.services.map;
 
 import me.gabrielchiong.babyclinic.models.Baby;
-import me.gabrielchiong.babyclinic.models.PrimaryParent;
-import me.gabrielchiong.babyclinic.services.CrudService;
+import me.gabrielchiong.babyclinic.services.BabyService;
 
 import java.util.Set;
 
-public class BabyService extends AbstractMapService<Baby, Long> implements CrudService<Baby, Long> {
+public class BabyServiceMap extends AbstractMapService<Baby, Long> implements BabyService {
     @Override
     public Set<Baby> findAll() {
         return super.findAll();

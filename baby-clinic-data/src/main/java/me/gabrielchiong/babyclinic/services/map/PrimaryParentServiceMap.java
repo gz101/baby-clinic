@@ -1,11 +1,11 @@
 package me.gabrielchiong.babyclinic.services.map;
 
 import me.gabrielchiong.babyclinic.models.PrimaryParent;
-import me.gabrielchiong.babyclinic.services.CrudService;
+import me.gabrielchiong.babyclinic.services.PrimaryParentService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<PrimaryParent, Long> implements CrudService<PrimaryParent, Long> {
+public class PrimaryParentServiceMap extends AbstractMapService<PrimaryParent, Long> implements PrimaryParentService {
 
     @Override
     public Set<PrimaryParent> findAll() {
@@ -30,5 +30,10 @@ public class OwnerServiceMap extends AbstractMapService<PrimaryParent, Long> imp
     @Override
     public PrimaryParent findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public PrimaryParent findByLastName(String lastName) {
+        return null;
     }
 }
