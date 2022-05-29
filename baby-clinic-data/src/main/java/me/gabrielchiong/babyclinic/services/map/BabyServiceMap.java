@@ -25,7 +25,7 @@ public class BabyServiceMap extends AbstractMapService<Baby, Long> implements Ba
 
     @Override
     public Baby save(Baby object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

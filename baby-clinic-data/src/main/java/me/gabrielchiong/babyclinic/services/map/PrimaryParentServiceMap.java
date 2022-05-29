@@ -26,7 +26,7 @@ public class PrimaryParentServiceMap extends AbstractMapService<PrimaryParent, L
 
     @Override
     public PrimaryParent save(PrimaryParent object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

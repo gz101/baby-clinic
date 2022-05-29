@@ -20,13 +20,11 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         PrimaryParent primaryParent1 = new PrimaryParent();
-        primaryParent1.setId(1L);
         primaryParent1.setFirstName("Michael");
         primaryParent1.setLastName("Weston");
         primaryParentService.save(primaryParent1);
 
         PrimaryParent primaryParent2 = new PrimaryParent();
-        primaryParent2.setId(2L);
         primaryParent2.setFirstName("Fiona");
         primaryParent2.setLastName("Glenanne");
         primaryParentService.save(primaryParent2);
@@ -34,13 +32,11 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Loaded Primary Parents...");
 
         Doctor doctor1 = new Doctor();
-        doctor1.setId(1L);
         doctor1.setFirstName("Sam");
         doctor1.setLastName("Axe");
         doctorService.save(doctor1);
 
         Doctor doctor2 = new Doctor();
-        doctor2.setId(2L);
         doctor2.setFirstName("Jessie");
         doctor2.setLastName("Porter");
         doctorService.save(doctor2);
