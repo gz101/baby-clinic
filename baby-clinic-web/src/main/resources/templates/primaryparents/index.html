@@ -5,6 +5,24 @@
     <title>List of Primary Parents</title>
 </head>
 <body>
+<!--/*@thymesVar id="primaryParent" type="me.gabrielchiong.babyclinic.model.PrimaryParent"*/-->
     <h1 th:text="'List of Primary Parents'">Primary Parents List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="primaryParent:${primaryParents}">
+                <td th:text="${primaryParent.id}">100</td>
+                <td th:text="${primaryParent.firstName}">Joe</td>
+                <td th:text="${primaryParent.lastName}">Buck</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

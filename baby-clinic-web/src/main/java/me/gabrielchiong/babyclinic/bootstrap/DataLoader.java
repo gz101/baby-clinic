@@ -5,7 +5,9 @@ import me.gabrielchiong.babyclinic.models.PrimaryParent;
 import me.gabrielchiong.babyclinic.services.DoctorService;
 import me.gabrielchiong.babyclinic.services.PrimaryParentService;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DataLoader implements CommandLineRunner {
     private final PrimaryParentService primaryParentService;
     private final DoctorService doctorService;
@@ -24,9 +26,9 @@ public class DataLoader implements CommandLineRunner {
         primaryParentService.save(primaryParent1);
 
         PrimaryParent primaryParent2 = new PrimaryParent();
-        primaryParent1.setId(2L);
-        primaryParent1.setFirstName("Fiona");
-        primaryParent1.setLastName("Glenanne");
+        primaryParent2.setId(2L);
+        primaryParent2.setFirstName("Fiona");
+        primaryParent2.setLastName("Glenanne");
         primaryParentService.save(primaryParent2);
 
         System.out.println("Loaded Primary Parents...");
@@ -38,9 +40,9 @@ public class DataLoader implements CommandLineRunner {
         doctorService.save(doctor1);
 
         Doctor doctor2 = new Doctor();
-        doctor1.setId(2L);
-        doctor1.setFirstName("Jessie");
-        doctor1.setLastName("Porter");
+        doctor2.setId(2L);
+        doctor2.setFirstName("Jessie");
+        doctor2.setLastName("Porter");
         doctorService.save(doctor2);
 
         System.out.println("Loaded Doctors...");
